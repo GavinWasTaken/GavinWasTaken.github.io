@@ -1,67 +1,72 @@
-<html><head>
+<html>
+  
+  <head></head>
+  
+  <body data-spy="scroll" data-target="#myScrollspy" data-offset="20">
     <style>
       .sidenav {
-            height: 100%;
-            width: 0;
-            position: absolute;
-            z-index: 1;
-            top: 0;
-            left: 0;
-            background-color: #111;
-            overflow-x: hidden;
-            transition: 0.5s;
-            padding-top: 60px;
-        }
-        
-        .sidenav a {
-            padding: 8px 8px 8px 32px;
-            text-decoration: none;
-            font-size: 25px;
-            color: #818181;
-            display: block;
-            transition: 0.3s
-        }
-        
-        .sidenav a:hover, .offcanvas a:focus{
-            color: #f1f1f1;
-        }
-        
-        .sidenav .closebtn {
-            position: absolute;
-            top: 0;
-            right: 25px;
-            font-size: 36px;
-            margin-left: 50px;
-        }
-        
-        @media screen and (max-height: 450px) {
-          .sidenav {padding-top: 15px;}
-          .sidenav a {font-size: 18px;}
-        }
-              .affix {
-              top: 20px;
-          }
-        
-          .affix + .container-fluid {
-              padding-top: 70px;
-          }
+    height: 100%;
+    width: 0;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s
+}
+
+.sidenav a:hover, .offcanvas a:focus{
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+      .affix {
+      top: 20px;
+  }
+
+  .affix + .container-fluid {
+      padding-top: 70px;
+  }
     </style>
     <script>
       function openNav() {
-                  document.getElementById("mySidenav").style.width = "250px";
-              }
-              
-              function closeNav() {
-                  document.getElementById("mySidenav").style.width = "0";
-              }
+            document.getElementById("mySidenav").style.width = "250px";
+        }
+        
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+        }
     </script>
-  </head><body data-spy="scroll" data-target="#myScrollspy" data-offset="20">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script type="text/javascript" src="/js//jquery.min.js"></script>
     <script type="text/javascript" src="/js/bootstrap.min.js"></script>
     <link href="/font/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href="/css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="http://pingendo.github.io/pingendo-bootstrap/themes/default/bootstrap.css"
+    rel="stylesheet" type="text/css">
     <div class="sidenav" id="mySidenav" data-spy="affix">
       <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
       <a href="#home">Home</a>
@@ -71,7 +76,7 @@
       <a href="#wkExpId">Work Experience</a>
       <a href="#">Additional Info</a>
     </div>
-    <div class="section text-center">
+    <div class="section text-center" id="home">
       <div class="container">
         <div class="row">
           <div class="col-md-12">
@@ -101,20 +106,11 @@
                 <a href="#wkExpId">Work Experience</a>
               </li>
               <li>
-                <a href="#">Addition Info</a>
+                <a href="#additionalId">Addition Info</a>
               </li>
             </ul>
           </div>
         </nav>
-      </div>
-    </div>
-    <div class="section">
-      <div class="container">
-        <div class="row">
-          <div class="fixed">
-            <span class="btn btn-lg btn-primary btn-primary absolute" onclick="openNav()" data-spy="affix">☰ Menu</span>
-          </div>
-        </div>
       </div>
     </div>
     <div class="section">
@@ -129,7 +125,7 @@
               <a href="#personId"><img src="https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/3/005/051/120/3b343d9.jpg" class="img-circle img-responsive"></a>
               <div class="caption">
                 <h2 class="text-center text-primary">Gavin Hickey</h2>
-                <p contenteditable="true" class="text-info"></p>
+                <h4 contenteditable="true" class="text-center text-info">22 year old computing student</h4>
               </div>
             </div>
           </div>
@@ -143,7 +139,7 @@
         </div>
       </div>
     </div>
-    <div class="section" id="home">
+    <div class="section">
       <div class="container">
         <div class="row">
           <div class="col-md-4">
@@ -155,7 +151,7 @@
             <h1 class="text-center text-info">Work Experience</h1>
           </div>
           <div class="col-md-4">
-            <a href="#"><img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcShp1M3Z1B1pr1bsS-rtgMuuAjsvgWzpHccyWSwe0Gre1OYCL-_" class="center-block img-responsive"></a>
+            <a href="#additionalId"><img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcShp1M3Z1B1pr1bsS-rtgMuuAjsvgWzpHccyWSwe0Gre1OYCL-_" class="center-block img-responsive"></a>
             <h1 class="text-center text-info">Additional Info</h1>
           </div>
         </div>
@@ -171,6 +167,9 @@
       </div>
     </div>
     <div class="section" id="personId">
+      <div align="right">
+        <span class="btn btn-lg btn-primary btn-primary absolute" onclick="openNav()">☰ Menu</span>
+      </div>
       <div class="container">
         <div class="row">
           <div class="col-md-12">
@@ -199,6 +198,9 @@
       </div>
     </div>
     <div class="section">
+      <div align="right">
+        <span class="btn btn-lg btn-primary btn-primary absolute" onclick="openNav()">☰ Menu</span>
+      </div>
       <div class="container">
         <div class="row">
           <div class="col-md-12" id="EduId">
@@ -207,6 +209,7 @@
                 <u>Education</u>
               </b>
             </h1>
+            <a href="#"><img src="http://www.courses4u.ie/files/companies/IT-Tallaght-Logo.gif" class="img-responsive" href=" https://www.linkedin.com/in/gavin-hickey-86934390"></a>
             <h2 contenteditable="true">Institute of Technology Tallaght</h2>
             <h3>Bachelor of Science (Honours) in Computing (4 Year course)</h3>
             <p>
@@ -219,7 +222,11 @@
                 Architecture</li>
               <li>Coding Languages: JAVA, C++, C#</li>
               <li>IntelliJIDEA 13.1 (Java), JFormDesigner, SQL Developer, Visual Studio
-                2015 and .NET</li>
+                2015 and .NET
+                <br>
+                <br>
+                <br>
+              </li>
             </ul>
             <h4 contenteditable="true">Tallaght Community School</h4>
             <p>
@@ -240,6 +247,9 @@
     </div>
     <div class="section" id="wkExpId">
       <div class="container">
+        <div align="right">
+          <span class="btn btn-lg btn-primary btn-primary absolute" onclick="openNav()">☰ Menu</span>
+        </div>
         <div class="row">
           <div class="col-md-12" id="EduId">
             <h1>
@@ -250,10 +260,11 @@
             <div class="container">
               <div class="row">
                 <div class="col-md-3">
-                  <h2>ESB&nbsp;</h2>
+                  <h2 draggable="true">ESB&nbsp;</h2>
                 </div>
                 <div class="col-md-9">
-                  <a class="btn btn-lg btn-primary" contenteditable="true" data-toggle="modal" data-target="#ESBModal" id="esb-Btn">More Info</a>
+                  <a class="btn btn-info btn-lg" contenteditable="true" data-toggle="modal"
+                  data-target="#ESBModal" id="esb-Btn">More Info</a>
                 </div>
               </div>
             </div>
@@ -263,7 +274,7 @@
                   <h2>Serfac Ltd</h2>
                 </div>
                 <div class="col-md-9">
-                  <a class="btn btn-lg btn-primary" id="serfac-Btn" data-toggle="modal" data-target="#serfacModal">More Info</a>
+                  <a class="btn btn-info btn-lg" id="serfac-Btn" data-toggle="modal" data-target="#serfacModal">More Info</a>
                 </div>
               </div>
             </div>
@@ -273,7 +284,7 @@
                   <h2 contenteditable="true">Fireseal Ltd</h2>
                 </div>
                 <div class="col-md-9">
-                  <a class="btn btn-lg btn-primary" id="Fireseal-btn" data-toggle="modal" data-target="#FiresealModal">More Info</a>
+                  <a class="btn btn-info btn-lg" id="Fireseal-btn" data-toggle="modal" data-target="#FiresealModal">More Info</a>
                 </div>
               </div>
               <div class="row">
@@ -281,18 +292,12 @@
                   <h2>Dublin Civil Defence</h2>
                 </div>
                 <div class="col-md-9">
-                  <a class="btn btn-lg btn-primary" id="CivilDefence-btn" data-toggle="modal" data-target="#CivilDefenceModal">More Info</a>
+                  <a class="btn btn-info btn-lg" id="CivilDefence-btn" data-toggle="modal"
+                  data-target="#CivilDefenceModal">More Info</a>
                 </div>
               </div>
               <div class="row">
                 <div class="col-md-12">
-                  <div class="container">
-                    <div class="row">
-                      <div class="col-md-12">
-                        <a class="btn btn-lg btn-primary">Click me</a>
-                      </div>
-                    </div>
-                  </div>
                   <h3 contenteditable="true">Other Qualifications&nbsp;
                     <div>
                       <li>Occupational First Aid Certificate, FETAC Level 5</li>
@@ -301,6 +306,30 @@
                       <li>Certified Cardiac First Responder</li>
                     </div>
                   </h3>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-12">
+                  <h1>College Projects</h1>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-12">
+                  <h3 contenteditable="true">Here are some of the college projects I have worked on during my course</h3>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-12">
+                  <div class="container">
+                    <div class="row">
+                      <div class="col-md-4">
+                        <a href=" https://www.linkedin.com/in/gavin-hickey-86934390 " class="btn btn-block btn-info btn-lg"><b>Year 3 Project</b></a>
+                      </div>
+                      <div class="col-md-5">
+                        <a href=" https://github.com/PeterBrady84/BasicKneadsPizza " class="btn btn-block btn-info btn-lg btn-lg"><b>Year 2 Project</b></a>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -319,6 +348,9 @@
     </div>
     <div class="section" id="ConId">
       <div class="container">
+        <div align="right">
+          <span class="btn btn-lg btn-primary btn-primary absolute" onclick="openNav()">☰ Menu</span>
+        </div>
         <div class="row">
           <div class="col-md-12" id="ConId">
             <h1>
@@ -357,8 +389,11 @@
     </div>
     <div class="section">
       <div class="container">
+        <div align="right">
+          <span class="btn btn-lg btn-primary btn-primary absolute" onclick="openNav()">☰ Menu</span>
+        </div>
         <div class="row">
-          <div class="col-md-12" id="refernceId">
+          <div class="col-md-12" id="referenceId">
             <h1>
               <b>
                 <u>References</u>
@@ -376,6 +411,96 @@
               <h3>Telecom Services | ESB Networks</h3>
               <h3>Phone:+353 1 702 7235 / +353 87 9528448&nbsp;</h3>
             </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="section">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <hr>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="section">
+      <div class="container">
+        <div align="right">
+          <span class="btn btn-lg btn-primary btn-primary absolute" onclick="openNav()">☰ Menu</span>
+        </div>
+        <div class="row">
+          <div class="col-md-12" id="additionalId">
+            <h1>
+              <b>
+                <u>Additional Information</u>
+              </b>
+            </h1>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12">
+            <h3>
+              <b>Work I am interested in?</b>
+            </h3>
+            <h4 contenteditable="true">I am interested in software development and working within a group to
+              help design and create programs of various uses. I want nothing more than
+              to put my college learnt skills to the test in the real world. If possible
+              I would like a look into the world of video game development as it is a
+              life ambition of mine.</h4>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-8">
+            <h3>
+              <b>Interests and Hobbies:</b>
+            </h3>
+            <h4>
+              <b>Reading</b>
+            </h4>
+            <h4>
+              <b>Art/Drawing</b>
+            </h4>
+            <h4>
+              <b>Airsoft:</b>This is a team building sport with great aspects of stratedy,teamwork
+              and physical exercise.&nbsp;
+              <br>
+              <br>If you would like to know more then please watch this video.</h4>
+            <div
+            class="embed-responsive embed-responsive-16by9">
+              <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/2RSp2ZM6Zoc"
+              allowfullscreen=""></iframe>
+          </div>
+          <p></p>
+        </div>
+      </div>
+    </div>
+    </div>
+    <div class="section">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <h1>Extra information page</h1>
+            <h3 class="text-success" contenteditable="true">In this Ca I have developed this project with the help of Pingendo bootstrap
+              developer.
+              <div>I did not use any template and stuck to a blank page to start my design
+                using only the ideas and designs I had come up with as my structure for
+                my programme</div>
+              <div>The different twitter bootstrap features I have included within this project
+                are as follows:</div>
+              <li>Bootstrap Images</li>
+              <li>Clickable Images</li>
+              <li>Bootstrap Buttons</li>
+              <li>Bootstrap collapse. (This happens when the side navigation button disappears)</li>
+              <li>Bootstrap Tabs/Pills (Used for the beginning header tab for navigation)</li>
+              <li>Bootstrap Navbar</li>
+              <li>Boostrap Modal</li>
+              <li>Bootstrap Scrollspy</li>
+              <li>Youtube media outputs</li>
+              <li>Bootstrap Scrollspy</li>
+              <li>Functions (eg Used to display the side navigation pop out bar )</li>
+            </h3>
+            <h1>Hosting Url :&nbsp;GavinWasTaken.github.io</h1>
           </div>
         </div>
       </div>
@@ -532,6 +657,6 @@
         </div>
       </div>
     </div>
-  
+  </body>
 
-</body></html>
+</html>
