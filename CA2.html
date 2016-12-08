@@ -1,67 +1,67 @@
 <html><head>
     <style>
       .sidenav {
-            height: 100%;
-            width: 0;
-            position: absolute;
-            z-index: 1;
-            top: 0;
-            left: 0;
-            background-color: #111;
-            overflow-x: hidden;
-            transition: 0.5s;
-            padding-top: 60px;
-        }
-        
-        .sidenav a {
-            padding: 8px 8px 8px 32px;
-            text-decoration: none;
-            font-size: 25px;
-            color: #818181;
-            display: block;
-            transition: 0.3s
-        }
-        
-        .sidenav a:hover, .offcanvas a:focus{
-            color: #f1f1f1;
-        }
-        
-        .sidenav .closebtn {
-            position: absolute;
-            top: 0;
-            right: 25px;
-            font-size: 36px;
-            margin-left: 50px;
-        }
-        
-        @media screen and (max-height: 450px) {
-          .sidenav {padding-top: 15px;}
-          .sidenav a {font-size: 18px;}
-        }
-              .affix {
-              top: 20px;
-          }
-        
-          .affix + .container-fluid {
-              padding-top: 70px;
-          }
+    height: 100%;
+    width: 0;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s
+}
+
+.sidenav a:hover, .offcanvas a:focus{
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+      .affix {
+      top: 20px;
+  }
+
+  .affix + .container-fluid {
+      padding-top: 70px;
+  }
     </style>
     <script>
       function openNav() {
-                  document.getElementById("mySidenav").style.width = "250px";
-              }
-              
-              function closeNav() {
-                  document.getElementById("mySidenav").style.width = "0";
-              }
+          document.getElementById("mySidenav").style.width = "250px";
+      }
+      
+      function closeNav() {
+          document.getElementById("mySidenav").style.width = "0";
+      }
     </script>
   </head><body data-spy="scroll" data-target="#myScrollspy" data-offset="20">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <script type="text/javascript" src="/js//jquery.min.js"></script>
-    <script type="text/javascript" src="/js/bootstrap.min.js"></script>
-    <link href="/font/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href="/css/bootstrap.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+    <script type="text/javascript" src="http://netdna.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="http://pingendo.github.io/pingendo-bootstrap/themes/default/bootstrap.css" rel="stylesheet" type="text/css">
     <div class="sidenav" id="mySidenav" data-spy="affix">
       <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
       <a href="#home">Home</a>
@@ -73,32 +73,28 @@
     </div>
     <div class="section text-center">
       <div class="container">
-        <div class="row">
-          <div class="col-md-12">
-            <h1 class="text-center">
+        <div class="row"><div class="col-md-12"><h1 class="text-center">
               <b>
                 <u>My Portfolio</u>
               </b>
-            </h1>
-          </div>
-        </div>
+            </h1></div></div>
         <nav class="navbar navbar-inverse fixed">
           <div class="container-fluid ">
             <ul class="nav nav-pills">
               <li class="active">
-                <a href="#home">Home</a>
+                <a href="#">Home</a>
               </li>
               <li>
                 <a href="#EduId">Education</a>
               </li>
               <li>
-                <a href="#ConId">Contact Info</a>
+                <a href="#">Contact Info</a>
               </li>
               <li>
-                <a href="#referenceId">References</a>
+                <a href="#">References</a>
               </li>
               <li>
-                <a href="#wkExpId">Work Experience</a>
+                <a href="#">Work Experience</a>
               </li>
               <li>
                 <a href="#">Addition Info</a>
@@ -121,12 +117,12 @@
       <div class="container">
         <div class="row">
           <div class="col-md-4">
-            <a href="#EduId"><img src="http://engagedhealthsolutions.com/wp-content/uploads/2011/04/EducationBlue.jpg" class="img-responsive"></a>
+            <a href="#EduId"><img src="http://pingendo.github.io/pingendo-bootstrap/assets/placeholder.png" class="img-responsive"></a>
             <h1 class="text-center text-info">Education</h1>
           </div>
           <div class="col-md-4">
             <div class="thumbnail">
-              <a href="#personId"><img src="https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/3/005/051/120/3b343d9.jpg" class="img-circle img-responsive"></a>
+              <a href="#personId"><img src="http://pingendo.github.io/pingendo-bootstrap/assets/placeholder.png" class="img-responsive"></a>
               <div class="caption">
                 <h2 class="text-center text-primary">Gavin Hickey</h2>
                 <p contenteditable="true" class="text-info"></p>
@@ -134,11 +130,8 @@
             </div>
           </div>
           <div class="col-md-4">
-            <a href="#ConId"><img src="http://previews.123rf.com/images/niroworld/niroworld1502/niroworld150200027/36758760-Web-contact-us-Internet-concept-with-email-mobile-phone-and-at-icon-and-symbol-on-four-blue-cubes-fo-Stock-Photo.jpg" class="img-responsive"></a>
-            <h1 class="text-center text-info">
-              <br>
-              <br>
-              <br>Contact Info</h1>
+            <a href="#ConId"><img src="http://pingendo.github.io/pingendo-bootstrap/assets/placeholder.png" class="img-responsive"></a>
+            <h1 class="text-center text-info">Contact Info</h1>
           </div>
         </div>
       </div>
@@ -147,15 +140,15 @@
       <div class="container">
         <div class="row">
           <div class="col-md-4">
-            <a href="#referenceId"><img src="http://www.livrexpress.net/public/img/big/Ref.png" class="img-responsive"></a>
+            <a href="#referenceId"><img src="http://pingendo.github.io/pingendo-bootstrap/assets/placeholder.png" class="img-responsive"></a>
             <h1 class="text-center text-info">References</h1>
           </div>
           <div class="col-md-4">
-            <a href="#wkExpId"><img src="http://www.brainmachine.co.uk/wp-content/uploads/HiRes.jpg" class="img-responsive"></a>
+            <a href="#wkExpId"><img src="http://pingendo.github.io/pingendo-bootstrap/assets/placeholder.png" class="img-responsive"></a>
             <h1 class="text-center text-info">Work Experience</h1>
           </div>
           <div class="col-md-4">
-            <a href="#"><img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcShp1M3Z1B1pr1bsS-rtgMuuAjsvgWzpHccyWSwe0Gre1OYCL-_" class="center-block img-responsive"></a>
+            <a href="#"><img src="http://pingendo.github.io/pingendo-bootstrap/assets/placeholder.png" class="img-responsive"></a>
             <h1 class="text-center text-info">Additional Info</h1>
           </div>
         </div>
@@ -189,16 +182,7 @@
         </div>
       </div>
     </div>
-    <div class="section">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12">
-            <hr>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="section">
+    <div class="section"><div class="container"><div class="row"><div class="col-md-12"><hr></div></div></div></div><div class="section">
       <div class="container">
         <div class="row">
           <div class="col-md-12" id="EduId">
@@ -286,13 +270,6 @@
               </div>
               <div class="row">
                 <div class="col-md-12">
-                  <div class="container">
-                    <div class="row">
-                      <div class="col-md-12">
-                        <a class="btn btn-lg btn-primary">Click me</a>
-                      </div>
-                    </div>
-                  </div>
                   <h3 contenteditable="true">Other Qualifications&nbsp;
                     <div>
                       <li>Occupational First Aid Certificate, FETAC Level 5</li>
@@ -308,16 +285,7 @@
         </div>
       </div>
     </div>
-    <div class="section">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12">
-            <hr>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="section" id="ConId">
+    <div class="section"><div class="container"><div class="row"><div class="col-md-12"><hr></div></div></div></div><div class="section" id="ConId">
       <div class="container">
         <div class="row">
           <div class="col-md-12" id="ConId">
@@ -346,16 +314,8 @@
         </div>
       </div>
     </div>
-    <div class="section">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12">
-            <hr>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="section">
+    
+    <div class="section"><div class="container"><div class="row"><div class="col-md-12"><hr></div></div></div></div><div class="section">
       <div class="container">
         <div class="row">
           <div class="col-md-12" id="refernceId">
@@ -363,21 +323,10 @@
               <b>
                 <u>References</u>
               </b>
-            </h1>
-            <div class="col-md-6">
-              <h2>Mr. John Golde</h2>
-              <h3>Civil Defence Instructor</h3>
-              <h3>Civil Defence</h3>
-              <h3>Phone: 087 632 2846</h3>
-            </div>
-            <div class="col-md-6">
-              <h2>Stuart Ayling</h2>
-              <h3>Safety and Process Manager</h3>
-              <h3>Telecom Services | ESB Networks</h3>
-              <h3>Phone:+353 1 702 7235 / +353 87 9528448&nbsp;</h3>
-            </div>
+            </h1><div class="col-md-6"><h2>Mr. John Golde</h2><h3>Civil Defence Instructor</h3><h3>Civil Defence</h3><h3>Phone: 087 632 2846</h3></div><div class="col-md-6"><h2>Stuart Ayling </h2><h3>Safety and Process Manager</h3><h3>Telecom Services | ESB Networks</h3><h3>Phone:+353 1 702 7235 / +353 87 9528448&nbsp;</h3></div>
           </div>
         </div>
+        
       </div>
     </div>
     <div class="modal fade" id="ESBModal">
