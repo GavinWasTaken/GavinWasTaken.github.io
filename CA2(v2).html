@@ -1,0 +1,548 @@
+﻿<html>
+  
+  <head>
+    <style>
+      .sidenav {
+    height: 100%;
+    width: 0;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s
+}
+
+.sidenav a:hover, .offcanvas a:focus{
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+      .affix {
+      top: 20px;
+  }
+
+  .affix + .container-fluid {
+      padding-top: 70px;
+  }
+    </style>
+    <script>
+      function openNav() {
+          document.getElementById("mySidenav").style.width = "250px";
+      }
+      
+      function closeNav() {
+          document.getElementById("mySidenav").style.width = "0";
+      }
+    </script>
+  </head>
+  
+  <body data-spy="scroll" data-target="#myScrollspy" data-offset="20">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+    <script type="text/javascript" src="http://netdna.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css"
+    rel="stylesheet" type="text/css">
+    <link href="http://pingendo.github.io/pingendo-bootstrap/themes/default/bootstrap.css"
+    rel="stylesheet" type="text/css">
+    <div class="sidenav" id="mySidenav" data-spy="affix">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+      <a href="#home">Home</a>
+      <a href="#EduId">Education</a>
+      <a href="#ConId">Contact Info</a>
+      <a href="#">References</a>
+      <a href="#wkExpId">Work Experience</a>
+      <a href="#">Additional Info</a>
+    </div>
+    <div class="section text-center">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <h1 class="text-center">
+              <b>
+                <u>My Portfolio</u>
+              </b>
+            </h1>
+          </div>
+        </div>
+        <nav class="navbar navbar-inverse fixed">
+          <div class="container-fluid ">
+            <ul class="nav nav-pills">
+              <li class="active">
+                <a href="#home">Home</a>
+              </li>
+              <li>
+                <a href="#EduId">Education</a>
+              </li>
+              <li>
+                <a href="#ConId">Contact Info</a>
+              </li>
+              <li>
+                <a href="#referenceId">References</a>
+              </li>
+              <li>
+                <a href="#wkExpId">Work Experience</a>
+              </li>
+              <li>
+                <a href="#">Addition Info</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </div>
+    <div class="section">
+      <div class="container">
+        <div class="row">
+          <div class="fixed">
+            <span class="btn btn-lg btn-primary btn-primary absolute" onclick="openNav()"
+            data-spy="affix">☰ Menu</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="section">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <a href="#EduId"><img src="http://engagedhealthsolutions.com/wp-content/uploads/2011/04/EducationBlue.jpg" class="img-responsive"></a>
+            <h1 class="text-center text-info">Education</h1>
+          </div>
+          <div class="col-md-4">
+            <div class="thumbnail">
+              <a href="#personId"><img src="https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/3/005/051/120/3b343d9.jpg" class="img-circle img-responsive"></a>
+              <div class="caption">
+                <h2 class="text-center text-primary">Gavin Hickey</h2>
+                <p contenteditable="true" class="text-info"></p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <a href="#ConId"><img src="http://previews.123rf.com/images/niroworld/niroworld1502/niroworld150200027/36758760-Web-contact-us-Internet-concept-with-email-mobile-phone-and-at-icon-and-symbol-on-four-blue-cubes-fo-Stock-Photo.jpg" class="img-responsive"></a>
+            <h1 class="text-center text-info">
+              <br>
+              <br>
+              <br>Contact Info</h1>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="section" id="home">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <a href="#referenceId"><img src="http://www.livrexpress.net/public/img/big/Ref.png" class="img-responsive"></a>
+            <h1 class="text-center text-info">References</h1>
+          </div>
+          <div class="col-md-4">
+            <a href="#wkExpId"><img src="http://www.brainmachine.co.uk/wp-content/uploads/HiRes.jpg" class="img-responsive"></a>
+            <h1 class="text-center text-info">Work Experience</h1>
+          </div>
+          <div class="col-md-4">
+            <a href="#"><img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcShp1M3Z1B1pr1bsS-rtgMuuAjsvgWzpHccyWSwe0Gre1OYCL-_" class="center-block img-responsive"></a>
+            <h1 class="text-center text-info">Additional Info</h1>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="section">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <hr>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="section" id="personId">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <h2>
+              <b>
+                <u>Personal Statement</u>
+              </b>
+            </h2>
+            <h3 contenteditable="true">A highly motivated individual with experience and a passion for computing,
+              proven time management, organisational and teamwork skills, a person with
+              their own initiative to find work and accomplish goals, polite and always
+              happy to help with customers and staff alike with an increasing knowledge
+              of computing skills including computer networking, software development,
+              Programming and Information Security.</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="section">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <hr>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="section">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12" id="EduId">
+            <h1>
+              <b>
+                <u>Education</u>
+              </b>
+            </h1>
+            <h2 contenteditable="true">Institute of Technology Tallaght</h2>
+            <h3>Bachelor of Science (Honours) in Computing (4 Year course)</h3>
+            <p>
+              <br>Currently I am studying&nbsp;my 4th year of a four year course.
+              <br>
+            </p>
+            <ul>
+              <li>Modules include: Enterprise Applications Development, Information Management,&nbsp;
+                <br>Interactive Media Design, Social Media Analysis and Enterprise Application
+                Architecture</li>
+              <li>Coding Languages: JAVA, C++, C#</li>
+              <li>IntelliJIDEA 13.1 (Java), JFormDesigner, SQL Developer, Visual Studio
+                2015 and .NET</li>
+            </ul>
+            <h4 contenteditable="true">Tallaght Community School</h4>
+            <p>
+              <b>Leaving Certificate</b>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="section">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <hr>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="section" id="wkExpId">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12" id="EduId">
+            <h1>
+              <b>
+                <u>Work Experience</u>
+              </b>
+            </h1>
+            <div class="container">
+              <div class="row">
+                <div class="col-md-3">
+                  <h2>ESB&nbsp;</h2>
+                </div>
+                <div class="col-md-9">
+                  <a class="btn btn-lg btn-primary" contenteditable="true" data-toggle="modal"
+                  data-target="#ESBModal" id="esb-Btn">More Info</a>
+                </div>
+              </div>
+            </div>
+            <div class="container">
+              <div class="row">
+                <div class="col-md-3">
+                  <h2>Serfac Ltd</h2>
+                </div>
+                <div class="col-md-9">
+                  <a class="btn btn-lg btn-primary" id="serfac-Btn" data-toggle="modal"
+                  data-target="#serfacModal">More Info</a>
+                </div>
+              </div>
+            </div>
+            <div class="container">
+              <div class="row">
+                <div class="col-md-3">
+                  <h2 contenteditable="true">Fireseal Ltd</h2>
+                </div>
+                <div class="col-md-9">
+                  <a class="btn btn-lg btn-primary" id="Fireseal-btn" data-toggle="modal"
+                  data-target="#FiresealModal">More Info</a>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-3">
+                  <h2>Dublin Civil Defence</h2>
+                </div>
+                <div class="col-md-9">
+                  <a class="btn btn-lg btn-primary" id="CivilDefence-btn" data-toggle="modal"
+                  data-target="#CivilDefenceModal">More Info</a>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-12">
+                  <div class="container">
+                    <div class="row">
+                      <div class="col-md-12">
+                        <a class="btn btn-lg btn-primary">Click me</a>
+                      </div>
+                    </div>
+                  </div>
+                  <h3 contenteditable="true">Other Qualifications&nbsp;
+                    <div>
+                      <li>Occupational First Aid Certificate, FETAC Level 5</li>
+                    </div>
+                    <div>
+                      <li>Certified Cardiac First Responder</li>
+                    </div>
+                  </h3>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="section">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <hr>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="section" id="ConId">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12" id="ConId">
+            <h1>
+              <u>
+                <b>Contact Info</b>
+              </u>
+            </h1>
+            <h3>
+              <b>Address:</b>&nbsp;9 Parkhill Court Kilnamanagh Dublin 24&nbsp;</h3>
+            <h3>
+              <b>Phone Number:&nbsp;</b>0857765561</h3>
+            <h3>
+              <b>Email:&nbsp;</b>gavinhickeyty4@gmail.com</h3>
+            <div class="container">
+              <div class="row">
+                <div class="col-md-4">
+                  <a href=" https://www.linkedin.com/in/gavin-hickey-86934390 " class="btn btn-block btn-info btn-lg btn-lg"><b>My LinkedIn</b></a>
+                </div>
+                <div class="col-md-3">
+                  <a class="btn btn-block btn-info btn-lg btn-lg" data-toggle="modal" data-target="#recTimesId">Contact Times</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="section">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <hr>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="section">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12" id="refernceId">
+            <h1>
+              <b>
+                <u>References</u>
+              </b>
+            </h1>
+            <div class="col-md-6">
+              <h2>Mr. John Golde</h2>
+              <h3>Civil Defence Instructor</h3>
+              <h3>Civil Defence</h3>
+              <h3>Phone: 087 632 2846</h3>
+            </div>
+            <div class="col-md-6">
+              <h2>Stuart Ayling</h2>
+              <h3>Safety and Process Manager</h3>
+              <h3>Telecom Services | ESB Networks</h3>
+              <h3>Phone:+353 1 702 7235 / +353 87 9528448&nbsp;</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="ESBModal">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+            <h2 class="modal-title" id="ESBModal" contenteditable="true">ESB | Summer Student Programme</h2>
+          </div>
+          <div class="modal-body">
+            <h5>
+              <i>
+                <u>ESB Head Office, Lower Fitzwilliam Street, Dublin 2</u>
+              </i>
+            </h5>
+            <h4>
+              <b>
+                <u>Software Development and Telecoms Intern</u>
+              </b>
+            </h4>
+            <p>During &nbsp;the period of June til September 2016 I worked as an Intern
+              for Electric Supply Board (ESB).&nbsp;
+              <br>
+              <br>During this time I had experience in:</p>
+            <li>Software Research and Development&nbsp;</li>
+            <li>Development of Safety Assessment Programme&nbsp;</li>
+            <li>Development of Database Programme</li>
+            <li>Installation of 2000 New IP phones&nbsp;
+              <p></p>
+            </li>
+          </div>
+          <div class="modal-footer">
+            <a class="btn btn-default" data-dismiss="modal">Close</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="serfacModal">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+            <h2 class="modal-title">Serfac Limited</h2>
+          </div>
+          <div class="modal-body">
+            <h5>
+              <i>
+                <u>Mayberry Road, Kilnamanagh</u>
+              </i>
+            </h5>
+            <h4>
+              <b>
+                <u>Warehouse Operative</u>
+              </b>
+            </h4>
+            <p contenteditable="true">During the perios of June til Aurgust 2014 I worked as a warehouse operative
+              in Serfac Limited</p>
+            <br>During this time I had experience in:&nbsp;
+            <li>Maintaining work space i.e. cleaning, organising&nbsp;</li>
+            <li>Checking stock and stacking shelves, wrapping packages for shipping&nbsp;
+              <p></p>
+            </li>
+          </div>
+          <div class="modal-footer">
+            <a class="btn btn-default" data-dismiss="modal">Close</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="FiresealModal">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+            <h2 class="modal-title">Fireseal Limited</h2>
+          </div>
+          <div class="modal-body">
+            <h5>
+              <i>
+                <u>Broomhill Road, Tallaght</u>
+              </i>
+            </h5>
+            <h4>
+              <b>
+                <u>Fire Proofing Operative</u>
+              </b>
+            </h4>
+            <p>During the period of June til August 2015 I wordked as a fire proofing
+              operative in Fireseal Limited&nbsp;
+              <br>
+              <br>During this time I had experience in:</p>
+            <li>Safe Pass Certified&nbsp;</li>
+            <li>Stock Management&nbsp;</li>
+            <li>Working on construction sites – painting,&nbsp;fireproofing, labouring&nbsp;</li>
+            <li>Customer Service including&nbsp;transactions, invoices&nbsp;
+              <p></p>
+            </li>
+          </div>
+          <div class="modal-footer">
+            <a class="btn btn-default" data-dismiss="modal">Close</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="CivilDefenceModal">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+            <h2 class="modal-title" contenteditable="true">Dublin Civil Defence</h2>
+          </div>
+          <div class="modal-body">
+            <h5>
+              <i>
+                <u>Volunteer First Aider</u>
+              </i>
+            </h5>
+            <p>I have been a volunteer with Dublin Civil Defence since 2012.
+              <br>
+              <br>During my time with them I have had experience with:</p>
+            <li>Crowd Management (At Tallaght Stadium and St.Patrick's Parade)</li>
+            <li>Providing dirst aid when required either individually or as a part of
+              a team
+              <p></p>
+            </li>
+          </div>
+          <div class="modal-footer">
+            <a class="btn btn-default" data-dismiss="modal">Close</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="recTimesId">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+            <h2 class="modal-title">Recommend Times</h2>
+          </div>
+          <div class="modal-body">
+            <p>Please contact me at these times to get in contact me directly by phone:
+              <br>
+            </p>
+            <li>Weekdayss: 4pm - 9pm</li>
+            <li>Weekends: 11am-8pm
+              <p></p>
+            </li>
+          </div>
+          <div class="modal-footer">
+            <a class="btn btn-default" data-dismiss="modal">Close</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+
+</html>
